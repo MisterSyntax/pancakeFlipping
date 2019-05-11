@@ -6,9 +6,11 @@ import revengeOfThePancakes from './revengeOfThePancakes/revengeOfThePancakes.js
 * you'll need to log it if you want to see the result
 **/
 console.log(revengeOfThePancakes(`
-    5
+    7
     -
     -+
+    +-
+    -+-
     +­-+
     +++
     --+-
