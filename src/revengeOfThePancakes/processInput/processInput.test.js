@@ -14,7 +14,7 @@ describe('parses a giant input string and returns an array with the number of st
             -
             ++
             `)
-        ).toEqual(["2", [['-'], ['+','+']]]);
+        ).toEqual(["2", [['-'], ['+', '+']]]);
     });
     it('handles bad input', () => {
         expect(processInput()).toEqual(["0", []]);
