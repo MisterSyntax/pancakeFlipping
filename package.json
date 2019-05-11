@@ -5,7 +5,8 @@
     "author": "Andrew Syriala <asyriala@overstock.com>",
     "license": "MIT",
     "scripts": {
-        "start": "nodemon --exec babel-node src/index.js"
+        "start": "nodemon --exec babel-node src/index.js",
+        "test": "yarn jest --coverage --watchAll"
     },
     "devDependencies": {
         "@babel/core": "^7.4.4",
