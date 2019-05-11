@@ -8,7 +8,7 @@ export default function processInput(inputString = '') {
     const arrayOfArrays = splitInput
         .slice(1)
         .map(
-            curr => curr.trim().split('')
+            curr => curr.trim().replace(/[^-+]/g, '').split('')
         );
 
     return [numberOfStrings, arrayOfArrays];

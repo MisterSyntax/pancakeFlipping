@@ -20,4 +20,12 @@ describe('parses a giant input string and returns an array with the number of st
         expect(processInput()).toEqual(["0", []]);
         expect(processInput('1++++++++')).toEqual(["0", []]);
     });
+    it('handles malformed input', () => {
+        expect(processInput(
+            `2
+            -~~~~
+            +a+
+            `)
+        ).toEqual(["2", [['-'], ['+', '+']]]);
+    });
 });
